@@ -28,14 +28,24 @@
 
 To run the Next.js application on your local machine, follow the steps below:
 
-1. _Prerequisites_: Ensure you have Node.js installed on your computer. If you don't have it, you can download it from [https://nodejs.org](https://nodejs.org).
+1. _Prerequisites_:
 
-2. _Clone the Repository_: Clone this repository to your local machine using Git or download it as a ZIP file and extract it.
+Ensure you have Node.js installed on your computer. If you don't have it, you can download it from [https://nodejs.org](https://nodejs.org).
 
-3. \*Install Dependencies: Open a terminal in the project's root directory and run the following command to install all required dependencies:npm install4.
+2. _Clone the Repository_:
 
-\*\*Start the Development Server: After installing the dependencies, run the following command to start the development server:npm run dev5.
+Clone this repository to your local machine using Git or download it as a ZIP file and extract it.
 
-\*_Access the Application_: Once the server is up and running, open your web browser and navigate to `http://localhost:3000` to access the application.
+3. \*Install Dependencies:
+
+Open a terminal in the project's root directory and run the following command to install all required dependencies:npm install
+
+4. \*\*Start the Development Server:
+
+After installing the dependencies, run the following command to start the development server:npm run dev
+
+5. \*_Access the Application_:
+
+Once the server is up and running, open your web browser and navigate to `http://localhost:3000` to access the application.
 
 You can now explore and interact with the Next.js application on your local machine!
