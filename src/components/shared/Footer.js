@@ -4,8 +4,8 @@ import logo from "../../assets/logo/logo.jpg"
 export function Footer() {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="w-full bg-white px-8 pt-32">
-            <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+        <footer className="w-full bg-slate-200 px-8 pt-16">
+            <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
                 <Image src={logo} alt="logo-ct" className="w-32" />
                 <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
                     <li>

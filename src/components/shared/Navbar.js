@@ -29,15 +29,14 @@ export default function Navbar() {
                         <Link href='/'><Image className='w-32' src={logo} alt="navberImage" /></Link>
                     </div>
                     <div className='hidden lg:block'>
-                        <Link href='/home' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Home</Link>
+                        <Link href='/' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Home</Link>
                     </div>
                     <div className='hidden lg:block'>
                         <button className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>CATEGORIES</button>
                     </div>
                     <div className='hidden lg:block'>
-                        <Link href='/add-book' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Add Book</Link>
+                        <Link href="/pc-builder" className='text-black hover:text-primary duration-100 font-semibold text-[13px] uppercase'>PC Builder</Link>
                     </div>
-
 
                     {
                         data?.user?.email ? <div className='flex items-center gap-2'>
@@ -70,13 +69,13 @@ export default function Navbar() {
                 <div className={`bg-[#f1f5f9] absolute z-50 duration-300 border-r mt-[17px] lg:hidden flex flex-col items-start w-72 min-h-screen bg-white px-4 py-4
           ${open ? 'left-0' : '-left-[300px]'}`}>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <Link href='/home' className='text-black font-semibold hover:text-white w-full py-2'>Home</Link>
+                        <Link href='/' className='text-black font-semibold hover:text-white w-full py-2'>Home</Link>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
                         <button className='text-black font-semibold hover:text-white w-full py-2'>CATEGORIES</button>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <Link href='/add-book' className='text-black font-semibold hover:text-white w-full py-2'>Add Book</Link>
+                        <Link href="/pc-builder" className='text-black font-semibold hover:text-white w-full py-2'>PC Builder</Link>
                     </div>
 
                     {
