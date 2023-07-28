@@ -11,7 +11,7 @@ export default function singin() {
             <Head>
                 <title>Next Login</title>
             </Head>
-            <main className='bg-slate-100 h-screen w-screen flex justify-center items-center'>
+            <main className='bg-slate-100 h-screen flex justify-center items-center'>
                 <div class="grid grid-cols-1 gap-2 md:min-w-[400px] max-w-[500px] mx-auto h-fit rounded-xl border p-5 shadow bg-white">
                     <h1 className='text-center font-bold py-4 text-3xl'>Signin</h1>
                     <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90  font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark: mr-2 mb-2">

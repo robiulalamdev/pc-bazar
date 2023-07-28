@@ -2,13 +2,12 @@ import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react'
 import logo from "../../assets/logo/logo.jpg"
 import Link from 'next/link';
-import { useSession } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     const { data } = useSession();
 
-    console.log(data)
 
     let navberRef = useRef();
     useEffect(() => {
@@ -42,17 +41,14 @@ export default function Navbar() {
 
                     {
                         data?.user?.email ? <div className='flex items-center gap-2'>
-                            <button size='sm' className='text-xs rounded-md'>
-                                Logout
+                            <button onClick={() => signOut()} className='w-24 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded'>
+                                <h1 className='text-white font-semibold text-sm'>LOG OUT</h1>
                             </button>
                         </div>
                             :
                             <div className='hidden lg:block lg:flex justify-between items-center gap-6'>
                                 <Link href='/signin' className='w-24 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded'>
                                     <h1 className='text-white font-semibold text-sm'>SIGN IN</h1>
-                                </Link>
-                                <Link href='/signup' className='w-24 h-8 border border-blue-600 hover:bg-gray-300 duration-300 flex justify-center items-center rounded'>
-                                    <h1 className='text-blue-600 font-semibold text-sm'>SIGNUP</h1>
                                 </Link>
                             </div>
                     }
