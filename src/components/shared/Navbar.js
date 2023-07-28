@@ -27,13 +27,13 @@ export default function Navbar() {
             <nav ref={navberRef} className='uppercase'>
                 <div className='relative cursor-pointer flex justify-between items-center gap-6 lg:gap-10 h-14 px-4 md:px-8 max-w-[1440px] mx-auto'>
                     <div className='flex-grow'>
-                        <Link href='/'><Image className='w-10 rounded-full' src={logo} alt="navberImage" /></Link>
+                        <Link href='/'><Image className='w-32' src={logo} alt="navberImage" /></Link>
                     </div>
                     <div className='hidden lg:block'>
                         <Link href='/home' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Home</Link>
                     </div>
                     <div className='hidden lg:block'>
-                        <Link href='/all-books' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>All Books</Link>
+                        <button className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>CATEGORIES</button>
                     </div>
                     <div className='hidden lg:block'>
                         <Link href='/add-book' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Add Book</Link>
@@ -42,9 +42,9 @@ export default function Navbar() {
 
                     {
                         data?.user?.email ? <div className='flex items-center gap-2'>
-                            <Button onClick={() => handleLogout()} size='sm' className='text-xs rounded-md'>
+                            <button size='sm' className='text-xs rounded-md'>
                                 Logout
-                            </Button>
+                            </button>
                         </div>
                             :
                             <div className='hidden lg:block lg:flex justify-between items-center gap-6'>
@@ -77,7 +77,7 @@ export default function Navbar() {
                         <Link href='/home' className='text-black font-semibold hover:text-white w-full py-2'>Home</Link>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <Link href='/all-books' className='text-black font-semibold hover:text-white w-full py-2'>All Books</Link>
+                        <button className='text-black font-semibold hover:text-white w-full py-2'>CATEGORIES</button>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
                         <Link href='/add-book' className='text-black font-semibold hover:text-white w-full py-2'>Add Book</Link>
