@@ -13,3 +13,15 @@ export default function Home() {
     </main>
   )
 }
+
+
+// for server side rendering (SSG) with json-server data
+export const getStaticProps = async () => {
+  const res =await  fetch(`https://pc-bazar.vercel.app/api/categories/all-categories`);
+  const data =await  res.json();
+  return {
+    props: {
+      categories: data,
+    }
+  };
+}; 
