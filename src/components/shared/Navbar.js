@@ -40,7 +40,7 @@ export default function Navbar() {
 
                     {
                         data?.user?.email ? <div className='flex items-center gap-2'>
-                            <button onClick={() => signOut()} className='w-24 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded'>
+                            <button onClick={() => signOut()} className='w-24 h-8 bg-rose-600 hover:bg-rose-700 duration-300 flex justify-center items-center rounded'>
                                 <h1 className='text-white font-semibold text-sm'>LOG OUT</h1>
                             </button>
                         </div>
