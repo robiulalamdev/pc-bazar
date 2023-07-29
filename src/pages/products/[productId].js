@@ -6,8 +6,8 @@ export default function ProductById({ categories, product }) {
   return (
     <>
       <Navbar categories={categories?.data} />
-      <div className="max-w-[1480px] mx-auto px-4 pt-32">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+      <div className="max-w-[1480px] mx-auto px-4 py-32">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 border rounded-xl">
           <div className="w-80 h-60 mx-auto p-2">
             <Image
               className="w-full h-full mx-auto"
