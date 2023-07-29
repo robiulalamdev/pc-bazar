@@ -1,0 +1,14 @@
+{
+    "html.autoClosingTags": true,
+    "html.format.indentHandlebars": false,
+    "html.format.indentInnerHtml": true,
+    "html.format.contentUnformatted": "",
+    "emmet.excludeLanguages": [
+        "markdown",
+        " {\"vue-html\": \"html\", \"javascript\": \"javascriptreact\"}"
+    ],
+    "emmet.extensionsPath": [
+        " {\"vue-html\": \"html\", \"javascript\": \"javascriptreact\"}"
+    ],
+    "emmet.showSuggestionsAsSnippets": true
+}
