@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
 
       <div className="border-t p-2">
         <h1 className="text-xl font-bold text-gray-800">{product?.title}</h1>
-        <div>
+        <div className="my-4">
           <p>Category: {product?.categoryName}</p>
           <p>Status: {product?.status}</p>
           <p>Rating: {product?.rating}</p>

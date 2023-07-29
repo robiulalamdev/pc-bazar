@@ -46,7 +46,7 @@ export default function Home({ categories, products }) {
             </h1>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-4 px-4">
             {products?.map((product, i) => (
               <ProductCard key={i} product={product} />
             ))}
