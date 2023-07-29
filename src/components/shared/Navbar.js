@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
 import logo from "../../assets/logo/logo.jpg"
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
+import { Menu, Transition } from '@headlessui/react';
 
-export default function Navbar() {
+export default function Navbar({categories}) {
     const [open, setOpen] = useState(false)
     const { data } = useSession();
-
 
     let navberRef = useRef();
     useEffect(() => {
@@ -29,10 +29,44 @@ export default function Navbar() {
                         <Link href='/'><Image className='w-32' src={logo} alt="navberImage" /></Link>
                     </div>
                     <div className='hidden lg:block'>
-                        <Link href='/' className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>Home</Link>
+                        <Link href='/' className='text-black hover:text-blue-600 duration-100 font-semibold text-[13px]'>Home</Link>
                     </div>
                     <div className='hidden lg:block'>
-                        <button className='text-black hover:text-primary duration-100 font-semibold text-[13px]'>CATEGORIES</button>
+                    <Menu as="div" className="relative inline-block text-left">
+                        <div>
+                        <Menu.Button className="text-black hover:text-blue-600 duration-100 font-semibold text-[13px]">
+                        CATEGORIES
+                        </Menu.Button>
+                        </div>
+                        <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                        >
+                        <Menu.Items className="absolute -right-[80px] mt-2 w-44 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                           {
+                            categories?.map((cate,i)=>(
+                                <Menu.Item>
+                                {({ active }) => (
+                                <Link href={`/cate/${cate?._id}`}
+                                key={i}
+                                    className={`${
+                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                >
+                                    {cate?.category}
+                                </Link>
+                                )}
+                            </Menu.Item>
+                            ))
+                           }
+                        </Menu.Items>
+                        </Transition>
+                    </Menu>
                     </div>
                     <div className='hidden lg:block'>
                         <Link href="/pc-builder" className='text-black hover:text-primary duration-100 font-semibold text-[13px] uppercase'>PC Builder</Link>
@@ -69,13 +103,47 @@ export default function Navbar() {
                 <div className={`bg-[#f1f5f9] absolute z-50 duration-300 border-r mt-[17px] lg:hidden flex flex-col items-start w-72 min-h-screen bg-white px-4 py-4
           ${open ? 'left-0' : '-left-[300px]'}`}>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <Link href='/' className='text-black font-semibold hover:text-white w-full py-2'>Home</Link>
+                        <Link href='/' className='text-black font-semibold hover:text-blue-600 w-full py-2'>Home</Link>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <button className='text-black font-semibold hover:text-white w-full py-2'>CATEGORIES</button>
+                        <Menu as="div" className="relative inline-block text-left">
+                        <div>
+                        <Menu.Button className="text-black font-semibold hover:text-blue-600 w-full py-2">
+                        CATEGORIES
+                        </Menu.Button>
+                        </div>
+                        <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                        >
+                        <Menu.Items className="absolute -right-[80px] mt-2 w-44 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                           {
+                            categories?.map((cate,i)=>(
+                                <Menu.Item>
+                                {({ active }) => (
+                               <Link href={`/cate/${cate?._id}`}
+                               key={i}
+                                   className={`${
+                                   active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                                   } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                               >
+                                   {cate?.category}
+                               </Link>
+                                )}
+                            </Menu.Item>
+                            ))
+                           }
+                        </Menu.Items>
+                        </Transition>
+                    </Menu>
                     </div>
                     <div className='lg:hidden w-full flex items-center px-2 text-left hover:bg-[#0029FF]'>
-                        <Link href="/pc-builder" className='text-black font-semibold hover:text-white w-full py-2'>PC Builder</Link>
+                        <Link href="/pc-builder" className='text-black font-semibold hover:text-blue-600 w-full py-2'>PC Builder</Link>
                     </div>
 
                     {

@@ -1,26 +1,18 @@
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
-
 const inter = Inter({ subsets: ['latin'] })
-
-
 import banner1 from "../assets/images/banner1.jpg"
-import RootLayout from '@/layout/RootLayout'
+import Navbar from '@/components/shared/Navbar'
 
 export default function Home({categories}) {
   console.log(categories)
   return (
     <main>
+      <Navbar categories={categories?.data} />
       <Image className='w-full h-96' src={banner1} />
     </main>
   )
 }
-
-
-
-Home.getLayout = function getLayout(page) {
-  return <RootLayout>{page}</RootLayout>;
-};
 
 
 // for server side rendering (SSG) with json-server data
