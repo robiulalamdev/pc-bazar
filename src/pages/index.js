@@ -7,7 +7,6 @@ import Link from "next/link";
 import ProductCard from "@/components/cards/ProductCard";
 
 export default function Home({ categories, products }) {
-  console.log(products);
   return (
     <main>
       <Navbar categories={categories?.data} />

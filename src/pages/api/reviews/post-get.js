@@ -12,18 +12,25 @@ const client = new MongoClient(uri, {
 async function run(req, res) {
   try {
     await client.connect();
-    console.log("ping your deployment");
 
     const categoriesCollection = client.db("pcbazar").collection("categories");
     const productsCollection = client.db("pcbazar").collection("products");
+    const reviewsCollection = client.db("pcbazar").collection("reviews");
 
     if (req.method === "GET") {
-      const randomProducts = await productsCollection
-        .aggregate([{ $sample: { size: 6 } }])
-        .toArray();
+      const results = await productsCollection.find({
+        product: req.query.productid,
+      });
       res.send({
         success: true,
-        data: randomProducts,
+        data: results,
+      });
+    }
+    if (req.method === "POST") {
+      const results = await productsCollection.insertOne(req.body);
+      res.send({
+        success: true,
+        data: results,
       });
     }
   } finally {
