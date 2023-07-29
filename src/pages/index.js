@@ -2,9 +2,9 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 import banner1 from "../assets/images/banner1.jpg";
-import Navbar from "@/components/shared/Navbar";
+import Navbar from "../components/shared/Navbar";
 import Link from "next/link";
-import ProductCard from "@/components/cards/ProductCard";
+import ProductCard from "../components/cards/ProductCard";
 
 export default function Home({ categories, products }) {
   return (
