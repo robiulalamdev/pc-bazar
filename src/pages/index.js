@@ -9,7 +9,7 @@ export default function Home({categories}) {
   return (
     <main>
       <Navbar categories={categories?.data} />
-      <Image className='w-full h-96' src={banner1} />
+      <Image className='w-full h-96' src={banner1} alt="banner" />
     </main>
   )
 }
