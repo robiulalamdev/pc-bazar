@@ -39,7 +39,7 @@ async function run(req, res) {
       let totalRatingSum = 0;
 
       for (const rating of ratings) {
-        totalRatingSum += rating.rating;
+        totalRatingSum += parseInt(rating.rating);
       }
 
       const averageRating =

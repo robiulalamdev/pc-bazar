@@ -26,6 +26,7 @@ export default function ProductById({ categories, product }) {
               <p>Category: {product?.categoryName}</p>
               <p>Status: {product?.status}</p>
               <p>Rating: {product?.rating}</p>
+              <p>Average Rating: {product?.averageRating}</p>
               <h1 className="font-bold text-rose-600 text-3xl">
                 ${product?.price}
               </h1>
