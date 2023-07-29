@@ -50,10 +50,9 @@ export default function Navbar({categories}) {
                         <Menu.Items className="absolute -right-[80px] mt-2 w-44 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                            {
                             categories?.map((cate,i)=>(
-                                <Menu.Item>
+                                <Menu.Item key={i}>
                                 {({ active }) => (
                                 <Link href={`/cate/${cate?._id}`}
-                                key={i}
                                     className={`${
                                     active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
@@ -124,10 +123,10 @@ export default function Navbar({categories}) {
                         <Menu.Items className="absolute -right-[80px] mt-2 w-44 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                            {
                             categories?.map((cate,i)=>(
-                                <Menu.Item>
+                                <Menu.Item key={i}>
                                 {({ active }) => (
                                <Link href={`/cate/${cate?._id}`}
-                               key={i}
+                               
                                    className={`${
                                    active ? 'bg-violet-500 text-white' : 'text-gray-900'
                                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
