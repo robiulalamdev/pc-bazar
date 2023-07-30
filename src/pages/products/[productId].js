@@ -145,8 +145,7 @@ export default function ProductById({ categories, product, reviews }) {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    // `https://pc-bazar.vercel.app/api/products/single?productid=${params.productid}`
-    `http://localhost:3000/api/products/single?productid=${params.productid}`
+    `https://pc-bazar.vercel.app/api/products/single?productid=${params.productid}`
   );
   const data = await res.json();
 
@@ -156,7 +155,7 @@ export const getServerSideProps = async (context) => {
   const data1 = await res1.json();
 
   const reviewsRes = await fetch(
-    `http://localhost:3000/api/reviews/post-get?productid=${params?.productid}`
+    `https://pc-bazar.vercel.app/api/reviews/post-get?productid=${params?.productid}`
   );
   const reviewsData = await reviewsRes.json();
 

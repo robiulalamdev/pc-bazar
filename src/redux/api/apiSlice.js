@@ -5,7 +5,7 @@ const localhost = "http://localhost:3000/api";
 
 export const api = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: localhost }),
+  baseQuery: fetchBaseQuery({ baseUrl: hostapi }),
   tagTypes: ["reviews"],
   endpoints: () => ({}),
 });
