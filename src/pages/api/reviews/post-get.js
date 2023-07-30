@@ -18,17 +18,22 @@ async function run(req, res) {
     const reviewsCollection = client.db("pcbazar").collection("reviews");
 
     if (req.method === "GET") {
-      const results = await productsCollection.find({
-        product: req.query.productid,
-      });
+      console.log(req.query.productid);
+      const results = await reviewsCollection
+        .find({
+          product: req.query.productid,
+        })
+        .sort({ _id: -1 })
+        .toArray();
       res.send({
         success: true,
         data: results,
       });
     }
     if (req.method === "POST") {
-      const results = await productsCollection.insertOne(req.body);
-      res.send({
+      console.log(req.body);
+      const results = await reviewsCollection.insertOne(req.body);
+      res.status(200).send({
         success: true,
         data: results,
       });

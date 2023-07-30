@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ReactStars from "react-stars";
 
 export default function ProductCard({ product }) {
   return (
@@ -18,10 +19,19 @@ export default function ProductCard({ product }) {
 
       <div className="border-t p-2">
         <h1 className="text-xl font-bold text-gray-800">{product?.title}</h1>
+        <div className="flex items-center gap-2">
+          <p>Rating: {}</p>
+          <ReactStars
+            // count={}
+            edit={false}
+            size={24}
+            color2={"#ffd700"}
+            value={parseInt(product?.rating)}
+          />
+        </div>
         <div className="my-4">
           <p>Category: {product?.categoryName}</p>
           <p>Status: {product?.status}</p>
-          <p>Rating: {product?.rating}</p>
         </div>
         <h1 className="font-bold text-rose-600">${product?.price}</h1>
 

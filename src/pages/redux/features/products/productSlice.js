@@ -1,21 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  wishlistItems: [],
+  reviewMessage: "",
 };
 
-
 const productSlice = createSlice({
-  name: 'product',
+  name: "product",
   initialState,
   reducers: {
-    setWishlistItems: (state, action) => {
-      state.wishlistItems = action.payload;
+    setReviewMessage: (state, action) => {
+      state.reviewMessage = action.payload;
     },
   },
-
 });
 
-export const {setWishlistItems } = productSlice.actions;
+export const { setReviewMessage } = productSlice.actions;
 
 export default productSlice.reducer;

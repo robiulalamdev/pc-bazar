@@ -1,8 +1,36 @@
 import Navbar from "../../components/shared/Navbar";
 import Image from "next/image";
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import ReactStars from "react-stars";
+import { setReviewMessage } from "../redux/features/products/productSlice";
+import { useSession } from "next-auth/react";
+import { usePostReviewMutation } from "../redux/features/products/productApi";
 
-export default function ProductById({ categories, product }) {
+export default function ProductById({ categories, product, reviews }) {
+  const { data: userData } = useSession();
+  const { reviewMessage } = useSelector((state) => state.product);
+  const dispatch = useDispatch();
+  const [postReview, { isLoading }] = usePostReviewMutation();
+  console.log(reviews);
+
+  const handleSendReview = async () => {
+    const newReview = {
+      message: reviewMessage,
+      user: userData?.user?._id,
+      product: product?._id,
+    };
+
+    const options = {
+      data: newReview,
+    };
+
+    const data = await postReview(options);
+    console.log(data);
+    console.log(newReview);
+  };
+
+  console.log(reviewMessage);
   return (
     <>
       <Navbar categories={categories?.data} />
@@ -25,8 +53,38 @@ export default function ProductById({ categories, product }) {
             <div className="my-4">
               <p>Category: {product?.categoryName}</p>
               <p>Status: {product?.status}</p>
-              <p>Rating: {product?.rating}</p>
-              <p>Average Rating: {product?.averageRating}</p>
+              <div className="flex items-center gap-2">
+                <p>Rating: {}</p>
+                <ReactStars
+                  // count={}
+                  edit={false}
+                  size={24}
+                  color2={"#ffd700"}
+                  value={parseInt(product?.rating)}
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Average Rating: {}</p>
+                <ReactStars
+                  // count={}
+                  edit={false}
+                  size={24}
+                  color2={"#ffd700"}
+                  value={parseInt(
+                    product?.averageRating > 0 ? product?.averageRating : 3
+                  )}
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <p>Individual Rating: {}</p>
+                <ReactStars
+                  // count={}
+                  edit={false}
+                  size={24}
+                  color2={"#ffd700"}
+                  value={4.5}
+                />
+              </div>
               <h1 className="font-bold text-rose-600 text-3xl">
                 ${product?.price}
               </h1>
@@ -51,6 +109,34 @@ export default function ProductById({ categories, product }) {
             </div>
           </div>
         </div>
+
+        <div>
+          <h1>Add Review</h1>
+          <div className="flex justify-between items-center gap-2">
+            <input
+              type="text"
+              onChange={(e) => dispatch(setReviewMessage(e.target.value))}
+              className="border border-gray-500 h-10 w-full rounded-sm px-4"
+              placeholder="Enter Your Review Message"
+            />
+            <button
+              onClick={() => handleSendReview()}
+              className="w-20 h-10 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded my-2"
+            >
+              <h1 className="text-white font-semibold">Send</h1>
+            </button>
+          </div>
+          <div className="mt-4 max-h-[800px] overflow-y-scroll mb-6">
+            {reviews?.map((review, i) => (
+              <div
+                key={i}
+                className="grid grid-cols-1 gap-1 items-center mb-5 bg-[#e2e8f0]"
+              >
+                <p className="p-2">{review?.message}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
@@ -59,7 +145,8 @@ export default function ProductById({ categories, product }) {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `https://pc-bazar.vercel.app/api/products/single?productid=${params.productid}`
+    // `https://pc-bazar.vercel.app/api/products/single?productid=${params.productid}`
+    `http://localhost:3000/api/products/single?productid=${params.productid}`
   );
   const data = await res.json();
 
@@ -67,10 +154,17 @@ export const getServerSideProps = async (context) => {
     `https://pc-bazar.vercel.app/api/categories/all-categories`
   );
   const data1 = await res1.json();
+
+  const reviewsRes = await fetch(
+    `http://localhost:3000/api/reviews/post-get?productid=${params?.productid}`
+  );
+  const reviewsData = await reviewsRes.json();
+
   return {
     props: {
       product: data?.data,
       categories: data1,
+      reviews: reviewsData.data,
     },
   };
 };
