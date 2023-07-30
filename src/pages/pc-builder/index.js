@@ -7,14 +7,15 @@ import logo from "../../assets/logo/logo.jpg";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  setBuildItemsCounter,
   setCpuProcessor,
   setMonitor,
   setMotherboard,
-  setOthers,
   setPowerSupply,
   setRam,
   setStorageDevice,
 } from "../../redux/features/products/productSlice";
+import { toast } from "react-toastify";
 
 export default function PcBuilderPage({ categories }) {
   const { status } = useSession();
@@ -26,7 +27,7 @@ export default function PcBuilderPage({ categories }) {
     powerSupply,
     storageDevice,
     monitor,
-    others,
+    buildItemsCounter,
   } = useSelector((state) => state.product);
   const dispatch = useDispatch();
 
@@ -36,10 +37,33 @@ export default function PcBuilderPage({ categories }) {
   if (status === "unauthenticated") {
     router.push("/signin");
   }
+
+  const handleCompleteBuild = () => {
+    dispatch(setCpuProcessor(null));
+    dispatch(setMotherboard(null));
+    dispatch(setRam(null));
+    dispatch(setPowerSupply(null));
+    dispatch(setStorageDevice(null));
+    dispatch(setMonitor(null));
+
+    dispatch(setBuildItemsCounter([]));
+
+    toast.success("Congratulation! Complete Build", {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  };
+
   return (
     <div>
       <Navbar categories={categories?.data} />
-      <div className="max-w-[1480px] mx-auto min-h-screen px-4 py-32">
+      <div className="max-w-[1480px] mx-auto min-h-screen px-4 py-32 cursor-pointer">
         <div className="border border-gray-600 max-w-[1200px] w-full mx-auto h-fit">
           <div className="w-full h-14 bg-gray-100 flex items-center justify-center">
             <Image width={120} src={logo} alt="logo" />
@@ -75,14 +99,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setCpuProcessor(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -133,14 +149,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setMotherboard(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -191,14 +199,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setRam(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -249,14 +249,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setPowerSupply(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -307,14 +299,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setStorageDevice(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -365,14 +349,6 @@ export default function PcBuilderPage({ categories }) {
                         </div>
                       </div>
                     </div>
-                    <button
-                      onClick={() => dispatch(setMonitor(null))}
-                      className="w-full md:w-28 h-8 bg-white hover:bg-gray-100 duration-300 flex justify-center items-center rounded"
-                    >
-                      <h1 className="text-rose-600 font-semibold text-sm">
-                        Cancel
-                      </h1>
-                    </button>
                   </div>
                 )}
                 <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-2 bg-slate-200 p-2 border-b border-gray-400">
@@ -400,7 +376,7 @@ export default function PcBuilderPage({ categories }) {
                 </div>
               </div>
 
-              <div className="h-fit w-full grid grid-cols-1 border border-slate-500">
+              {/* <div className="h-fit w-full grid grid-cols-1 border border-slate-500">
                 {others && others?.length > 0 && (
                   <>
                     {others?.map((data, i) => (
@@ -463,8 +439,28 @@ export default function PcBuilderPage({ categories }) {
                     <h1 className="text-white font-semibold text-sm">Choose</h1>
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
+
+            <button
+              onClick={() => handleCompleteBuild()}
+              className={`w-full  h-10  duration-300 flex justify-center items-center rounded mt-4
+              ${
+                buildItemsCounter?.length > 4
+                  ? "bg-blue-600 hover:bg-blue-700"
+                  : "bg-gray-400 cursor-none"
+              }`}
+              disabled={buildItemsCounter?.length > 4 ? false : true}
+            >
+              <h1 className="text-white font-semibold text-sm">
+                Complete Build
+              </h1>
+            </button>
+
+            <p className="text-sm mt-2 text-rose-500">
+              <strong>*</strong> This button will be disabled unless the user
+              adds at least 5-6 of the mentioned components
+            </p>
           </div>
         </div>
       </div>
@@ -484,41 +480,3 @@ export const getStaticProps = async () => {
     },
   };
 };
-
-[
-  {
-    _id: "64c3552eccd6fd3337334d34",
-    category: "CPU / Processor",
-    icon: "https://cdn-icons-png.flaticon.com/128/2432/2432574.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d35",
-    category: "Motherboard",
-    icon: "https://cdn-icons-png.flaticon.com/128/10633/10633658.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d36",
-    category: "RAM",
-    icon: "https://cdn-icons-png.flaticon.com/128/543/543320.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d37",
-    category: "Power Supply Unit",
-    icon: "https://cdn-icons-png.flaticon.com/128/2507/2507398.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d38",
-    category: "Storage Device",
-    icon: "https://cdn-icons-png.flaticon.com/128/2696/2696730.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d39",
-    category: "Monitor",
-    icon: "https://cdn-icons-png.flaticon.com/128/3474/3474360.png",
-  },
-  {
-    _id: "64c3552eccd6fd3337334d3a",
-    category: "Others",
-    icon: "https://cdn-icons-png.flaticon.com/128/10348/10348994.png",
-  },
-];

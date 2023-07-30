@@ -9,7 +9,6 @@ import {
   setCpuProcessor,
   setMonitor,
   setMotherboard,
-  setOthers,
   setPowerSupply,
   setRam,
   setStorageDevice,
@@ -40,25 +39,10 @@ const ChoosePage = ({ products, categories }) => {
       dispatch(setStorageDevice(product));
     } else if (product?.categoryName === "Monitor") {
       dispatch(setMonitor(product));
-    } else if (product?.categoryName === "Others") {
-      dispatch(setOthers(product));
     }
 
     router.back();
   };
-
-  /*
-  
-  setReviewMessage
-  setCpuProcessor
-  setMotherboard
-  setRam
-  setPowerSupply
-  setStorageDevice
-  setMonitor
-  setOthers
-
-  */
 
   return (
     <div>

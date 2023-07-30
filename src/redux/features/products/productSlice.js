@@ -8,7 +8,7 @@ const initialState = {
   powerSupply: null,
   storageDevice: null,
   monitor: null,
-  others: [],
+  buildItemsCounter: [],
 };
 
 const productSlice = createSlice({
@@ -19,25 +19,61 @@ const productSlice = createSlice({
       state.reviewMessage = action.payload;
     },
     setCpuProcessor: (state, action) => {
-      state.cpuProcessor = action.payload;
+      const item = state.cpuProcessor;
+      if (item) {
+        state.cpuProcessor = action.payload;
+      } else {
+        state.cpuProcessor = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
     setMotherboard: (state, action) => {
-      state.motherboard = action.payload;
+      const item = state.motherboard;
+      if (item?._id) {
+        state.motherboard = action.payload;
+      } else {
+        state.motherboard = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
     setRam: (state, action) => {
-      state.ram = action.payload;
+      const item = state.ram;
+      if (item?._id) {
+        state.ram = action.payload;
+      } else {
+        state.ram = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
     setPowerSupply: (state, action) => {
-      state.powerSupply = action.payload;
+      const item = state.powerSupply;
+      if (item?._id) {
+        state.powerSupply = action.payload;
+      } else {
+        state.powerSupply = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
     setStorageDevice: (state, action) => {
-      state.storageDevice = action.payload;
+      const item = state.storageDevice;
+      if (item?._id) {
+        state.storageDevice = action.payload;
+      } else {
+        state.storageDevice = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
     setMonitor: (state, action) => {
-      state.monitor = action.payload;
+      const item = state.monitor;
+      if (item?._id) {
+        state.monitor = action.payload;
+      } else {
+        state.monitor = action.payload;
+        state.buildItemsCounter.push(action.payload?.category);
+      }
     },
-    setOthers: (state, action) => {
-      state.others = action.payload;
+    setBuildItemsCounter: (state, action) => {
+      state.buildItemsCounter = action.payload;
     },
   },
 });
@@ -50,7 +86,7 @@ export const {
   setPowerSupply,
   setStorageDevice,
   setMonitor,
-  setOthers,
+  setBuildItemsCounter,
 } = productSlice.actions;
 
 export default productSlice.reducer;
