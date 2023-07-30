@@ -18,7 +18,9 @@ export default function ProductCard({ product }) {
       </div>
 
       <div className="border-t p-2 relative">
-        <h1 className="text-xl font-bold text-gray-800">{product?.title}</h1>
+        <div className="min-h-[60px]">
+          <h1 className="text-xl font-bold text-gray-800">{product?.title}</h1>
+        </div>
         <div className="flex items-center gap-2">
           <p>Rating: {}</p>
           <ReactStars

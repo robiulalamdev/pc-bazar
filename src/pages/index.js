@@ -1,17 +1,45 @@
+import { useState } from "react";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
-import banner1 from "../assets/images/banner1.jpg";
 import Navbar from "../components/shared/Navbar";
 import Link from "next/link";
 import ProductCard from "../components/cards/ProductCard";
 
+import img1 from "../assets/banner-images/img5.png";
+import img2 from "../assets/banner-images/img1.png";
+import img3 from "../assets/banner-images/img2.png";
+import img4 from "../assets/banner-images/img3.png";
+import img5 from "../assets/banner-images/img4.png";
+import img6 from "../assets/banner-images/banner.png";
+import Slider from "react-slick";
+
+const banners = [img1, img2, img3, img4, img5, img6];
+
 export default function Home({ categories, products }) {
+  const [settings, setSettings] = useState({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
   return (
     <main>
       <Navbar categories={categories?.data} />
-      <div className="min-h-screen max-w-[1480px] mx-auto">
-        <Image className="w-full h-96" src={banner1} alt="banner" />
+      <div className="min-h-screen max-w-[1480px] mx-auto px-4">
+        <div>
+          <Slider {...settings}>
+            {banners?.map((img, i) => (
+              <Image
+                key={i}
+                className="w-full h-80 md:h-[450px] object-fill"
+                src={img}
+                alt="banner"
+              />
+            ))}
+          </Slider>
+        </div>
 
         <section className="my-6">
           <div>
