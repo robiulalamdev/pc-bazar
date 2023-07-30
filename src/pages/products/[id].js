@@ -7,7 +7,7 @@ import { setReviewMessage } from "../../redux/features/products/productSlice";
 import { useSession } from "next-auth/react";
 import { usePostReviewMutation } from "../../redux/features/products/productApi";
 
-export default function ProductById({ categories, product, reviews }) {
+export default function ProductDetails({ categories, product, reviews }) {
   const { data: userData } = useSession();
   const { reviewMessage } = useSelector((state) => state.product);
   const dispatch = useDispatch();
@@ -145,7 +145,7 @@ export default function ProductById({ categories, product, reviews }) {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const res = await fetch(
-    `https://pc-bazar.vercel.app/api/products/single?productid=${params.productid}`
+    `https://pc-bazar.vercel.app/api/products/single?productid=${params.id}`
   );
   const data = await res.json();
 
@@ -155,7 +155,7 @@ export const getServerSideProps = async (context) => {
   const data1 = await res1.json();
 
   const reviewsRes = await fetch(
-    `https://pc-bazar.vercel.app/api/reviews/post-get?productid=${params?.productid}`
+    `https://pc-bazar.vercel.app/api/reviews/post-get?productid=${params?.id}`
   );
   const reviewsData = await reviewsRes.json();
 
