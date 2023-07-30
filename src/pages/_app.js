@@ -6,11 +6,11 @@ import { Provider } from "react-redux";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Provider store={store}>
-      <SessionProvider session={pageProps.session}>
+    <SessionProvider session={pageProps.session}>
+      <Provider store={store}>
         <Component {...pageProps} />
         <Footer />
-      </SessionProvider>
-    </Provider>
+      </Provider>
+    </SessionProvider>
   );
 }
