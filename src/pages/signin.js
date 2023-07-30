@@ -37,7 +37,7 @@ export default function SigninPage({ categories }) {
           <button
             onClick={() =>
               signIn("github", {
-                callbackUrl: `${process.env.NEXTAUTH_URL}`,
+                callbackUrl: process.env.NEXTAUTH_URL,
               })
             }
             type="button"
@@ -63,7 +63,7 @@ export default function SigninPage({ categories }) {
           <button
             onClick={() =>
               signIn("google", {
-                callbackUrl: `${process.env.NEXTAUTH_URL}`,
+                callbackUrl: process.env.NEXTAUTH_URL,
               })
             }
             type="button"
