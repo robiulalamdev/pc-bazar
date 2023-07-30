@@ -49,7 +49,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d34`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -73,7 +73,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d35`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -97,7 +97,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d36`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -121,7 +121,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d37`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -145,7 +145,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d38`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -169,7 +169,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d39`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -193,7 +193,7 @@ export default function PcBuilderPage({ categories }) {
                   </div>
                 </div>
                 <Link
-                  href="/pc-builder/choose"
+                  href={`/pc-builder/64c3552eccd6fd3337334d3a`}
                   className="w-full md:w-28 h-8 bg-blue-600 hover:bg-blue-700 duration-300 flex justify-center items-center rounded"
                 >
                   <h1 className="text-white font-semibold text-sm">Choose</h1>
@@ -219,3 +219,41 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+[
+  {
+    _id: "64c3552eccd6fd3337334d34",
+    category: "CPU / Processor",
+    icon: "https://cdn-icons-png.flaticon.com/128/2432/2432574.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d35",
+    category: "Motherboard",
+    icon: "https://cdn-icons-png.flaticon.com/128/10633/10633658.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d36",
+    category: "RAM",
+    icon: "https://cdn-icons-png.flaticon.com/128/543/543320.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d37",
+    category: "Power Supply Unit",
+    icon: "https://cdn-icons-png.flaticon.com/128/2507/2507398.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d38",
+    category: "Storage Device",
+    icon: "https://cdn-icons-png.flaticon.com/128/2696/2696730.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d39",
+    category: "Monitor",
+    icon: "https://cdn-icons-png.flaticon.com/128/3474/3474360.png",
+  },
+  {
+    _id: "64c3552eccd6fd3337334d3a",
+    category: "Others",
+    icon: "https://cdn-icons-png.flaticon.com/128/10348/10348994.png",
+  },
+];
