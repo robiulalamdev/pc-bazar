@@ -12,7 +12,6 @@ const client = new MongoClient(uri, {
 async function run(req, res) {
   try {
     await client.connect();
-    console.log("ping your deployment");
 
     const categoriesCollection = client.db("pcbazar").collection("categories");
     const productsCollection = client.db("pcbazar").collection("products");
