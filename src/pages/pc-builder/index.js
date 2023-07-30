@@ -13,9 +13,9 @@ export default function PcBuilderPage({ categories }) {
   if (status === "loading") {
     return <p>Loading...</p>;
   }
-  // if (status === "unauthenticated") {
-  //   router.push("/signin");
-  // }
+  if (status === "unauthenticated") {
+    router.push("/signin");
+  }
   return (
     <div>
       <Navbar categories={categories?.data} />
