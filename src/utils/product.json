@@ -1,0 +1,90 @@
+{
+    "image": "https://www.startech.com.bd/image/cache/catalog/CPU%20Cooler/%20CRYORIG/CRYORIG%20C7/CRYORIG%20C7-1-500x500.jpg",
+    "category": "64c3552eccd6fd3337334d34",
+    "title": "Processor Title",
+    "status": "In stock",
+    "price": "250",
+    "description": "Processor Description\nTop flow CPU heat sink\nShorter is Better, 47mm Tall, One Size Fits All\nZero Interference A Cooler That Fits Anywhere\nQuad Air Inlet™ System Adding Extra Air Extending Performance\nBuilt In Absorbers for Low Noise & Low Maintenance\nFast Easy & Secure, Install Within Minutes\nEffortless Upgrade To the Latest AMD Ryzen AM4 Platform\nHEATSINK SPECIFICATION\nDimension ( with fan )\tL97 mm x W97 mm x H47 mm\nWeight ( with fan )\t357 g\nWeight ( without fan )\t295 g\nHeat pipes\t6mm heatpipe x 4 units\nFin\tT = 0.4 mm ; Gap = 1.2 mm\nFin Pcs\t57 pcs\nCopper Base\tC1100 Pure copper nickel plated\nRAM Height Limit\tLimitlessn\nTDP\t100 W\nFAN SPECIFICATION\nDimension\tL92 mm x W92 mm x H15 mm\nWeight\t62 g\nRated Speed\t600 ~ 2500 RPM ±10 %\nNoise Level\t30 dBA\nAir Flow\t40.5 CFM\nAir Pressure\t2.8 mmH2O\nAmpere\t0.2 A\n03 Years Warranty",
+    "keyFeatures": {
+      "brand": "Processor Brand",
+      "model": "Processor Model",
+      "specification": "4 cores, 8 threads",
+      "port": "AM4",
+      "type": "Processor Type",
+      "resolution": "N/A",
+      "voltage": "N/A"
+    },
+    "reviews": [],
+    "categoryName": "CPU / Processor",
+    "rating": "4.5"
+  }
+
+
+  [
+    {
+        "keyFeatures": {
+            "brand": "ASUS",
+            "model": "ROG Strix B550-F Gaming",
+            "formFactor": "ATX",
+            "socket": "AM4",
+            "ramSlots": "4x DDR4",
+            "expansionsSlots": "2x PCIe x16, 2x PCIe x1",
+            "storage": "2x M.2, 6x SATA",
+            "usbPorts": "USB 3.2 Gen 2 Type-A, USB 3.2 Gen 1 Type-C",
+            "Networking": "Gigabit Ethernet, Wi-Fi 6"
+        },
+        "category": "64c3552eccd6fd3337334d35",
+        "title": "ASUS ROG Strix B550-F Gaming",
+        "image": "https://techbd.com.bd/wp-content/uploads/2021/04/rog-stix-b550f-wifi-5-500x500-1.jpg",
+        "categoryName": "Motherboard",
+        "status": "In Stock",
+        "price": "199.99",
+        "description": "The ASUS ROG Strix B550-F Gaming is a feature-rich motherboard for gaming enthusiasts.",
+        "individual_rating": 4.7,
+        "average_rating": 4.6
+    },
+    {
+        "keyFeatures": {
+            "brand": "MSI",
+            "model": "MPG Z590 Gaming Carbon WiFi",
+            "formFactor": "ATX",
+            "socket": "LGA1200",
+            "ramSlots": "4x DDR4",
+            "expansionsSlots": "3x PCIe x16, 3x PCIe x1",
+            "storage": "3x M.2, 6x SATA",
+            "usbPorts": "USB 3.2 Gen 2 Type-A, USB 3.2 Gen 2 Type-C",
+            "Networking": "Gigabit Ethernet, Wi-Fi 6E"
+        },
+        "category": "64c3552eccd6fd3337334d35",
+        "title": "MSI MPG Z590 Gaming Carbon WiFi",
+        "image": "https://asset.msi.com/resize/image/global/product/product_161095891448135c9bfcadb2e77a3efa13a6213a37.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+        "categoryName": "Motherboard",
+        "status": "In Stock",
+        "price": "249.99",
+        "description": "The MSI MPG Z590 Gaming Carbon WiFi is a high-performance motherboard with wireless connectivity.",
+        "individual_rating": 4.6,
+        "average_rating": 4.5
+    },
+    {
+        "keyFeatures": {
+            "brand": "GIGABYTE",
+            "model": "B450 AORUS Elite",
+            "formFactor": "ATX",
+            "socket": "AM4",
+            "ramSlots": "4x DDR4",
+            "expansionsSlots": "1x PCIe x16, 2x PCIe x1",
+            "storage": "1x M.2, 6x SATA",
+            "usbPorts": "USB 3.1 Gen 2 Type-A, USB 3.1 Gen 1 Type-C",
+            "Networking": "Gigabit Ethernet"
+        },
+        "category": "64c3552eccd6fd3337334d35",
+        "title": "GIGABYTE B450 AORUS Elite",
+        "image": "https://www.skyland.com.bd/wp-content/uploads/2021/01/gigabyte-b450-aorus-elite-v2-1.png",
+        "categoryName": "Motherboard",
+        "status": "In of Stock",
+        "price": "129.99",
+        "description": "The GIGABYTE B450 AORUS Elite is a reliable motherboard for budget-conscious gamers.",
+        "individual_rating": 4.3,
+        "average_rating": 4.2
+    }
+]

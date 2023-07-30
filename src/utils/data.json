@@ -1,0 +1,684 @@
+{
+    "category": [
+        {
+            "_id": "64c4be0839750b5c9e2f9bf7",
+            "categories_name": "CPU / Processor",
+            "image": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "Intel",
+                        "Model": "Core i7-11700K",
+                        "Specification": "8 cores, 16 threads",
+                        "Socket": "LGA1200",
+                        "Clock Speed": "3.6 GHz (4.9 GHz Max Turbo)",
+                        "TDP": "125W"
+                    },
+                    "_id": "64c6749731ebb98fcdeacea1",
+                    "id": "1",
+                    "name": "Intel Core i7-11700K",
+                    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/bundle-with-pc-intel-11th-gen-rocket-lake-core-11617172224.webp",
+                    "category": "CPU / Processor",
+                    "status": "In Stock",
+                    "price": "399.99",
+                    "description": "The Intel Core i7-11700K is a powerful CPU designed for high-performance computing.",
+                    "individual_rating": 4.8,
+                    "average_rating": 4.7,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacea2",
+                            "author": "User123",
+                            "rating": 5,
+                            "comment": "Great CPU, blazing fast performance!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacea3",
+                            "author": "TechGuru",
+                            "rating": 4,
+                            "comment": "Solid processor for gaming and multitasking."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "AMD",
+                        "Model": "Ryzen 9 5900X",
+                        "Specification": "12 cores, 24 threads",
+                        "Socket": "AM4",
+                        "Clock Speed": "3.7 GHz (4.8 GHz Max Boost)",
+                        "TDP": "105W"
+                    },
+                    "_id": "64c6749731ebb98fcdeacea4",
+                    "id": "2",
+                    "name": "AMD Ryzen 9 5900X",
+                    "image": "https://www.startech.com.bd/image/cache/catalog/processor/amd/ryzen-9-5900x/ryzen-9-5900x-001-500x500.jpg",
+                    "category": "CPU / Processor",
+                    "status": "In Stock",
+                    "price": "499.99",
+                    "description": "The AMD Ryzen 9 5900X is a high-end CPU with exceptional multi-core performance.",
+                    "individual_rating": 4.9,
+                    "average_rating": 4.8,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacea5",
+                            "author": "GamingPro22",
+                            "rating": 5,
+                            "comment": "Outstanding CPU for gaming and content creation!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacea6",
+                            "author": "TechEnthusiast",
+                            "rating": 5,
+                            "comment": "Impressive performance and energy efficiency."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Intel",
+                        "Model": "Core i5-11600K",
+                        "Specification": "6 cores, 12 threads",
+                        "Socket": "LGA1200",
+                        "Clock Speed": "3.9 GHz (4.9 GHz Max Turbo)",
+                        "TDP": "125W"
+                    },
+                    "_id": "64c6749731ebb98fcdeacea7",
+                    "id": "3",
+                    "name": "Intel Core i5-11600K",
+                    "image": "https://www.startech.com.bd/image/cache/catalog/processor/Intel/i5-11600k/i5-11600k-500x500.jpg",
+                    "category": "CPU / Processor",
+                    "status": "In Stock",
+                    "price": "299.99",
+                    "description": "The Intel Core i5-11600K is a reliable CPU for mainstream computing needs.",
+                    "individual_rating": 4.5,
+                    "average_rating": 4.4,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacea8",
+                            "author": "CasualUser123",
+                            "rating": 4,
+                            "comment": "Good CPU for everyday tasks and light gaming."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacea9",
+                            "author": "TechEnthusiast456",
+                            "rating": 4,
+                            "comment": "Decent performance, but not for heavy workloads."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "64c4be0839750b5c9e2f9bf8",
+            "categories_name": "Motherboard",
+            "image": "https://images.pexels.com/photos/2588757/pexels-photo-2588757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "ASUS",
+                        "Model": "ROG Strix B550-F Gaming",
+                        "Form Factor": "ATX",
+                        "Socket": "AM4",
+                        "RAM Slots": "4x DDR4",
+                        "Expansion Slots": "2x PCIe x16, 2x PCIe x1",
+                        "Storage": "2x M.2, 6x SATA",
+                        "USB Ports": "USB 3.2 Gen 2 Type-A, USB 3.2 Gen 1 Type-C",
+                        "Networking": "Gigabit Ethernet, Wi-Fi 6"
+                    },
+                    "_id": "64c6749731ebb98fcdeaceaa",
+                    "id": "4",
+                    "name": "ASUS ROG Strix B550-F Gaming",
+                    "image": "https://techbd.com.bd/wp-content/uploads/2021/04/rog-stix-b550f-wifi-5-500x500-1.jpg",
+                    "category": "Motherboard",
+                    "status": "In Stock",
+                    "price": "199.99",
+                    "description": "The ASUS ROG Strix B550-F Gaming is a feature-rich motherboard for gaming enthusiasts.",
+                    "individual_rating": 4.7,
+                    "average_rating": 4.6,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceab",
+                            "author": "GamerGirl99",
+                            "rating": 5,
+                            "comment": "The best motherboard I've ever used!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceac",
+                            "author": "PCBuilder123",
+                            "rating": 4,
+                            "comment": "Lots of connectivity options, very satisfied."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "MSI",
+                        "Model": "MPG Z590 Gaming Carbon WiFi",
+                        "Form Factor": "ATX",
+                        "Socket": "LGA1200",
+                        "RAM Slots": "4x DDR4",
+                        "Expansion Slots": "3x PCIe x16, 3x PCIe x1",
+                        "Storage": "3x M.2, 6x SATA",
+                        "USB Ports": "USB 3.2 Gen 2 Type-A, USB 3.2 Gen 2 Type-C",
+                        "Networking": "Gigabit Ethernet, Wi-Fi 6E"
+                    },
+                    "_id": "64c6749731ebb98fcdeacead",
+                    "id": "5",
+                    "name": "MSI MPG Z590 Gaming Carbon WiFi",
+                    "image": "https://asset.msi.com/resize/image/global/product/product_161095891448135c9bfcadb2e77a3efa13a6213a37.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png",
+                    "category": "Motherboard",
+                    "status": "In Stock",
+                    "price": "249.99",
+                    "description": "The MSI MPG Z590 Gaming Carbon WiFi is a high-performance motherboard with wireless connectivity.",
+                    "individual_rating": 4.6,
+                    "average_rating": 4.5,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceae",
+                            "author": "TechGeek123",
+                            "rating": 4,
+                            "comment": "Solid motherboard with good connectivity options."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceaf",
+                            "author": "GamingEnthusiast",
+                            "rating": 5,
+                            "comment": "Love the Wi-Fi 6E support, great for online gaming."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "GIGABYTE",
+                        "Model": "B450 AORUS Elite",
+                        "Form Factor": "ATX",
+                        "Socket": "AM4",
+                        "RAM Slots": "4x DDR4",
+                        "Expansion Slots": "1x PCIe x16, 2x PCIe x1",
+                        "Storage": "1x M.2, 6x SATA",
+                        "USB Ports": "USB 3.1 Gen 2 Type-A, USB 3.1 Gen 1 Type-C",
+                        "Networking": "Gigabit Ethernet"
+                    },
+                    "_id": "64c6749731ebb98fcdeaceb0",
+                    "id": "6",
+                    "name": "GIGABYTE B450 AORUS Elite",
+                    "image": "https://www.skyland.com.bd/wp-content/uploads/2021/01/gigabyte-b450-aorus-elite-v2-1.png",
+                    "category": "Motherboard",
+                    "status": "In of Stock",
+                    "price": "129.99",
+                    "description": "The GIGABYTE B450 AORUS Elite is a reliable motherboard for budget-conscious gamers.",
+                    "individual_rating": 4.3,
+                    "average_rating": 4.2,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb1",
+                            "author": "BudgetGamer456",
+                            "rating": 4,
+                            "comment": "Decent motherboard for its price, no complaints."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb2",
+                            "author": "CasualUser789",
+                            "rating": 4,
+                            "comment": "Works well for casual gaming and everyday tasks."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "64c4be0839750b5c9e2f9bf9",
+            "categories_name": "RAM",
+            "image": "https://images.pexels.com/photos/163140/technology-computer-motherboard-chips-163140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "Corsair",
+                        "Model": "Vengeance LPX",
+                        "Capacity": "16GB (2 x 8GB)",
+                        "Type": "DDR4",
+                        "Speed": "3200MHz",
+                        "CAS Latency": "16",
+                        "Voltage": "1.35V",
+                        "Heat Spreader": "Yes"
+                    },
+                    "_id": "64c6749731ebb98fcdeaceb3",
+                    "id": "7",
+                    "name": "Corsair Vengeance LPX 16GB DDR4",
+                    "image": "https://computerimporter.com/wp-content/uploads/2022/03/16gb-ddr4-500x500-1-1200x900.jpg",
+                    "category": "RAM",
+                    "status": "In Stock",
+                    "price": "79.99",
+                    "description": "The Corsair Vengeance LPX 16GB DDR4 RAM offers high-speed performance for gaming and multitasking.",
+                    "individual_rating": 4.8,
+                    "average_rating": 4.7,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb4",
+                            "author": "User456",
+                            "rating": 5,
+                            "comment": "Fast and reliable RAM, perfect for my gaming rig."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb5",
+                            "author": "PCEnthusiast789",
+                            "rating": 4,
+                            "comment": "Good performance, but a bit pricey."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "G.SKILL",
+                        "Model": "Trident Z Neo",
+                        "Capacity": "32GB (2 x 16GB)",
+                        "Type": "DDR4",
+                        "Speed": "3600MHz",
+                        "CAS Latency": "16",
+                        "Voltage": "1.35V",
+                        "Heat Spreader": "Yes"
+                    },
+                    "_id": "64c6749731ebb98fcdeaceb6",
+                    "id": "8",
+                    "name": "G.SKILL Trident Z Neo 32GB DDR4",
+                    "image": "https://www.gskill.com/_upload/images/156284052513.png",
+                    "category": "RAM",
+                    "status": "In Stock",
+                    "price": "129.99",
+                    "description": "The G.SKILL Trident Z Neo 32GB DDR4 RAM delivers top-notch performance and RGB lighting.",
+                    "individual_rating": 4.9,
+                    "average_rating": 4.8,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb7",
+                            "author": "GamerPro456",
+                            "rating": 5,
+                            "comment": "Excellent RAM with mesmerizing RGB lighting effects!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceb8",
+                            "author": "TechFanatic789",
+                            "rating": 5,
+                            "comment": "Impressive speed and aesthetics, totally worth it."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Crucial",
+                        "Model": "Ballistix",
+                        "Capacity": "8GB (1 x 8GB)",
+                        "Type": "DDR4",
+                        "Speed": "2666MHz",
+                        "CAS Latency": "16",
+                        "Voltage": "1.2V",
+                        "Heat Spreader": "Yes"
+                    },
+                    "_id": "64c6749731ebb98fcdeaceb9",
+                    "id": "9",
+                    "name": "Crucial Ballistix 8GB DDR4",
+                    "image": "https://m.media-amazon.com/images/I/611O7coTfwS.jpg",
+                    "category": "RAM",
+                    "status": "In of Stock",
+                    "price": "59.99",
+                    "description": "The Crucial Ballistix 8GB DDR4 RAM offers reliable performance for budget gaming setups.",
+                    "individual_rating": 4.5,
+                    "average_rating": 4.4,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaceba",
+                            "author": "BudgetGamer123",
+                            "rating": 4,
+                            "comment": "Decent RAM for budget builds, does the job."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacebb",
+                            "author": "CasualUser789",
+                            "rating": 4,
+                            "comment": "Good value for money, but consider higher capacity if possible."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "64c4be0839750b5c9e2f9bfa",
+            "categories_name": "Power Supply Unit",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/PSU-Open1.jpg",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "EVGA",
+                        "Model": "Supernova 750 G5",
+                        "Wattage": "750W",
+                        "Certification": "80 Plus Gold",
+                        "Modular": "Fully Modular",
+                        "Fan Size": "135mm",
+                        "Connectors": "ATX, EPS, PCIe, SATA, Molex"
+                    },
+                    "_id": "64c6749731ebb98fcdeacebc",
+                    "id": "10",
+                    "name": "EVGA Supernova 750 G5",
+                    "image": "https://images.evga.com/products/gallery//png/220-G5-0750-X2_XL_1.png",
+                    "category": "Power Supply Unit",
+                    "status": "In Stock",
+                    "price": "119.99",
+                    "description": "The EVGA Supernova 750 G5 is a high-quality power supply with excellent efficiency and reliability.",
+                    "individual_rating": 4.7,
+                    "average_rating": 4.6,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacebd",
+                            "author": "PowerUser123",
+                            "rating": 5,
+                            "comment": "Reliable and efficient PSU, great for gaming builds."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacebe",
+                            "author": "TechGeek789",
+                            "rating": 4,
+                            "comment": "Good performance, but could be quieter."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Corsair",
+                        "Model": "RM850x",
+                        "Wattage": "850W",
+                        "Certification": "80 Plus Gold",
+                        "Modular": "Fully Modular",
+                        "Fan Size": "135mm",
+                        "Connectors": "ATX, EPS, PCIe, SATA, Molex"
+                    },
+                    "_id": "64c6749731ebb98fcdeacebf",
+                    "id": "11",
+                    "name": "Corsair RM850x",
+                    "image": "https://www.techlandbd.com/image/catalog/Power-Supply/Corsair/RM850x%20White/corsair-rm850x-850-watt-power-supply-1.jpg",
+                    "category": "Power Supply Unit",
+                    "status": "In of Stock",
+                    "price": "139.99",
+                    "description": "The Corsair RM850x is a high-end power supply with high efficiency and low noise operation.",
+                    "individual_rating": 4.5,
+                    "average_rating": 4.4,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacec0",
+                            "author": "PCMasterRace",
+                            "rating": 5,
+                            "comment": "Top-tier PSU, Corsair never disappoints!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacec1",
+                            "author": "TechEnthusiast456",
+                            "rating": 4,
+                            "comment": "Great performance, but a bit pricey compared to competitors."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Seasonic",
+                        "Model": "S12III 550W",
+                        "Wattage": "550W",
+                        "Certification": "80 Plus Bronze",
+                        "Modular": "Non-Modular",
+                        "Fan Size": "120mm",
+                        "Connectors": "ATX, EPS, PCIe, SATA, Molex"
+                    },
+                    "_id": "64c6749731ebb98fcdeacec2",
+                    "id": "12",
+                    "name": "Seasonic S12III 550W",
+                    "image": "https://www.elnekhelytechnology.com/image/cache/catalog/PSU/Seasonic/seasonic-s12ii-620-watt-80-plus-bronze-certified-psu-1000x1000.png",
+                    "category": "Power Supply Unit",
+                    "status": "In Stock",
+                    "price": "69.99",
+                    "description": "The Seasonic S12III 550W is an affordable power supply with stable and efficient performance.",
+                    "individual_rating": 4.3,
+                    "average_rating": 4.2,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacec3",
+                            "author": "BudgetBuilder789",
+                            "rating": 4,
+                            "comment": "Affordable PSU with reliable performance, good choice for budget builds."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacec4",
+                            "author": "CasualUser123",
+                            "rating": 4,
+                            "comment": "Decent PSU for general use, but not recommended for high-end systems."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "64c4be0839750b5c9e2f9bfb",
+            "categories_name": "Storage Device",
+            "image": "https://images.pexels.com/photos/3665444/pexels-photo-3665444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "Samsung",
+                        "Model": "970 EVO Plus",
+                        "Capacity": "500GB",
+                        "Interface": "NVMe PCIe 3.0 x4",
+                        "Read Speed": "3500 MB/s",
+                        "Write Speed": "3300 MB/s",
+                        "Form Factor": "M.2 2280"
+                    },
+                    "_id": "64c6749731ebb98fcdeacec5",
+                    "id": "13",
+                    "name": "Samsung 970 EVO Plus 500GB NVMe SSD",
+                    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/samsung-970-evo-plus-nvme-500gb-m2-2280-pcie-gen-41583840849.webp",
+                    "category": "Storage Device",
+                    "status": "In Stock",
+                    "price": "89.99",
+                    "description": "The Samsung 970 EVO Plus NVMe SSD offers lightning-fast read/write speeds and reliable performance.",
+                    "individual_rating": 4.9,
+                    "average_rating": 4.8,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacec6",
+                            "author": "StorageGuru123",
+                            "rating": 5,
+                            "comment": "Blazing fast SSD, great for OS and games!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacec7",
+                            "author": "TechFanatic456",
+                            "rating": 4,
+                            "comment": "Solid performance, but a bit pricey for higher capacities."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Crucial",
+                        "Model": "MX500",
+                        "Capacity": "1TB",
+                        "Interface": "SATA III",
+                        "Read Speed": "560 MB/s",
+                        "Write Speed": "510 MB/s",
+                        "Form Factor": "2.5-inch"
+                    },
+                    "_id": "64c6749731ebb98fcdeacec8",
+                    "id": "14",
+                    "name": "Crucial MX500 1TB SATA SSD",
+                    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/crucial-mx500-1tb-25-inch-7mm-sataiii-ssd-21679229358.webp",
+                    "category": "Storage Device",
+                    "status": "In Stock",
+                    "price": "109.99",
+                    "description": "The Crucial MX500 SATA SSD provides reliable storage and excellent value for money.",
+                    "individual_rating": 4.7,
+                    "average_rating": 4.6,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacec9",
+                            "author": "DataMaster789",
+                            "rating": 5,
+                            "comment": "Great SSD for general storage and daily use."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaceca",
+                            "author": "TechSavvy123",
+                            "rating": 4,
+                            "comment": "Affordable and reliable SSD, no complaints!"
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Seagate",
+                        "Model": "BarraCuda",
+                        "Capacity": "2TB",
+                        "Interface": "SATA III",
+                        "Speed": "7200 RPM",
+                        "Form Factor": "3.5-inch"
+                    },
+                    "_id": "64c6749731ebb98fcdeacecb",
+                    "id": "15",
+                    "name": "Seagate BarraCuda 2TB HDD",
+                    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/seagate-2tb-sata-5400rpm-35-inch-barracuda35-hdd-11548652057.webp",
+                    "category": "Storage Device",
+                    "status": "In Stock",
+                    "price": "69.99",
+                    "description": "The Seagate BarraCuda 2TB HDD offers ample storage space for your data and multimedia files.",
+                    "individual_rating": 4.5,
+                    "average_rating": 4.4,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacecc",
+                            "author": "DataHoarder456",
+                            "rating": 4,
+                            "comment": "Great storage capacity, perfect for archiving files."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeacecd",
+                            "author": "CasualUser789",
+                            "rating": 4,
+                            "comment": "Affordable and reliable HDD for general use."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_id": "64c4be0839750b5c9e2f9bfc",
+            "categories_name": "Monitor",
+            "image": "https://images.pexels.com/photos/38568/apple-imac-ipad-workplace-38568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "products": [
+                {
+                    "key_features": {
+                        "Brand": "LG",
+                        "Model": "27GL850-B",
+                        "Screen Size": "27-inch",
+                        "Resolution": "2560x1440 (QHD)",
+                        "Refresh Rate": "144Hz",
+                        "Panel Type": "Nano IPS",
+                        "Response Time": "1ms (GtG)",
+                        "Connectivity": "HDMI, DisplayPort, USB Hub"
+                    },
+                    "_id": "64c6749731ebb98fcdeacece",
+                    "id": "16",
+                    "name": "LG 27GL850-B 27-inch QHD Gaming Monitor",
+                    "image": "https://www.lg.com/content/dam/channel/wcms/uk/images/monitors/27GL850-B_AEK_EEUK_UK_C/gallery/medium01.jpg",
+                    "category": "Monitor",
+                    "status": "In Stock",
+                    "price": "499.99",
+                    "description": "The LG 27GL850-B is a high-performance gaming monitor with a QHD resolution and fast refresh rates.",
+                    "individual_rating": 4.8,
+                    "average_rating": 4.7,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeacecf",
+                            "author": "GamerPro789",
+                            "rating": 5,
+                            "comment": "Stunning colors and smooth gaming experience!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaced0",
+                            "author": "TechEnthusiast123",
+                            "rating": 4,
+                            "comment": "Great monitor, but a bit pricey compared to competitors."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "ASUS",
+                        "Model": "TUF Gaming VG27AQ",
+                        "Screen Size": "27-inch",
+                        "Resolution": "2560x1440 (QHD)",
+                        "Refresh Rate": "165Hz",
+                        "Panel Type": "IPS",
+                        "Response Time": "1ms (MPRT)",
+                        "Connectivity": "HDMI, DisplayPort, USB Hub"
+                    },
+                    "_id": "64c6749731ebb98fcdeaced1",
+                    "id": "17",
+                    "name": "ASUS TUF Gaming VG27AQ 27-inch WQHD Monitor",
+                    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/asus-tuf-gaming-vg27aq-27-inch-2k-wqhd-41581414744.webp",
+                    "category": "Monitor",
+                    "status": "In Stock",
+                    "price": "549.99",
+                    "description": "The ASUS TUF Gaming VG27AQ offers excellent gaming performance and adaptive sync technology.",
+                    "individual_rating": 4.7,
+                    "average_rating": 4.6,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaced2",
+                            "author": "GamingPro456",
+                            "rating": 5,
+                            "comment": "Fast and smooth gaming experience, highly recommended!"
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaced3",
+                            "author": "TechGeek789",
+                            "rating": 4,
+                            "comment": "Good monitor, but a bit overpriced."
+                        }
+                    ]
+                },
+                {
+                    "key_features": {
+                        "Brand": "Acer",
+                        "Model": "R240HY",
+                        "Screen Size": "23.8-inch",
+                        "Resolution": "1920x1080 (Full HD)",
+                        "Refresh Rate": "60Hz",
+                        "Panel Type": "IPS",
+                        "Response Time": "4ms (GtG)",
+                        "Connectivity": "HDMI, VGA"
+                    },
+                    "_id": "64c6749731ebb98fcdeaced4",
+                    "id": "18",
+                    "name": "Acer R240HY 23.8-inch Full HD Monitor",
+                    "image": "https://m.media-amazon.com/images/I/91u-JxjgBoL.jpg",
+                    "category": "Monitor",
+                    "status": "In of Stock",
+                    "price": "159.99",
+                    "description": "The Acer R240HY is a budget-friendly monitor with a Full HD resolution and slim bezels.",
+                    "individual_rating": 4.4,
+                    "average_rating": 4.3,
+                    "reviews": [
+                        {
+                            "_id": "64c6749731ebb98fcdeaced5",
+                            "author": "BudgetUser123",
+                            "rating": 4,
+                            "comment": "Affordable monitor with decent image quality."
+                        },
+                        {
+                            "_id": "64c6749731ebb98fcdeaced6",
+                            "author": "CasualUser789",
+                            "rating": 4,
+                            "comment": "Basic monitor for everyday use, no complaints."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

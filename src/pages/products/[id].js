@@ -1,6 +1,6 @@
 import Navbar from "../../components/shared/Navbar";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ReactStars from "react-stars";
 import { setReviewMessage } from "../../redux/features/products/productSlice";
@@ -12,13 +12,15 @@ export default function ProductDetails({ categories, product, reviews }) {
   const { reviewMessage } = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const [postReview, { isLoading }] = usePostReviewMutation();
-  console.log(reviews);
+  const [count, setCount] = useState(0);
+  console.log(count);
 
   const handleSendReview = async () => {
     const newReview = {
       message: reviewMessage,
       user: userData?.user?._id,
       product: product?._id,
+      rating: count,
     };
 
     const options = {
@@ -26,8 +28,6 @@ export default function ProductDetails({ categories, product, reviews }) {
     };
 
     const data = await postReview(options);
-    console.log(data);
-    console.log(newReview);
   };
 
   console.log(reviewMessage);
@@ -112,6 +112,16 @@ export default function ProductDetails({ categories, product, reviews }) {
 
         <div>
           <h1>Add Review</h1>
+          <div>
+            <ReactStars
+              // count={}
+              edit={true}
+              size={24}
+              onChange={(e) => setCount(e)}
+              color2={"#ffd700"}
+              value={count}
+            />
+          </div>
           <div className="flex justify-between items-center gap-2">
             <input
               type="text"

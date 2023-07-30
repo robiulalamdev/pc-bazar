@@ -2,7 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["www.startech.com.bd", "cdn-icons-png.flaticon.com"],
+    domains: [
+      "www.startech.com.bd",
+      "cdn-icons-png.flaticon.com",
+      "techbd.com.bd",
+      "www.skyland.com.bd",
+      "asset.msi.com",
+    ],
   },
 };
 
