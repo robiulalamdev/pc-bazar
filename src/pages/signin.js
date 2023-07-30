@@ -1,14 +1,14 @@
 import React from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import { signIn } from "next-auth/react";
 import Navbar from "../components/shared/Navbar";
 
 export default function SigninPage({ categories }) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Next Login</title>
-      </Head>
+      </Head> */}
       <Navbar categories={categories?.data} />
       <main className="bg-slate-100 h-screen flex justify-center items-center">
         <div class="grid grid-cols-1 gap-2 md:min-w-[400px] max-w-[500px] mx-auto h-fit rounded-xl border p-5 shadow bg-white">
