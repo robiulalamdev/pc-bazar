@@ -3,9 +3,9 @@ import Image from "next/image";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ReactStars from "react-stars";
-import { setReviewMessage } from "../redux/features/products/productSlice";
+import { setReviewMessage } from "../../redux/features/products/productSlice";
 import { useSession } from "next-auth/react";
-import { usePostReviewMutation } from "../redux/features/products/productApi";
+import { usePostReviewMutation } from "../../redux/features/products/productApi";
 
 export default function ProductById({ categories, product, reviews }) {
   const { data: userData } = useSession();
