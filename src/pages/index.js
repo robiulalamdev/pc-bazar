@@ -25,7 +25,7 @@ export default function Home({ categories, products }) {
     slidesToScroll: 1,
   });
   return (
-    <main>
+    <main className="overflow-hidden">
       <Navbar categories={categories?.data} />
       <div className="min-h-screen max-w-[1480px] mx-auto px-4">
         <div>
